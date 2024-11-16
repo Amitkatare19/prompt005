@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #dec9c9;
+}
+
+.accountpage {
+  width: 100vw;
+  /* position: fixed; */
+  overflow: auto;
+}
+.navtop {
+  width: 100vw;
+  height: 10vh;
+  /* background-color: white; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* position: fixed; */
+}
+
+.navleft {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.navleft > img {
+  height: 55px;
+  background-color: whitesmoke;
+}
+
+.home,
+.show,
+.cinemas {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.home > h3,
+.show > h3,
+.cinemas > h3 {
+  font-family: sans-serif;
+  font-weight: 200;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.home {
+  margin-left: 20px;
+  background-color: #d3aa40;
+  height: 40px;
+  width: 90px;
+  padding: 10px;
+  padding-left: 13px;
+  border-radius: 40px;
+  margin-right: 17px;
+}
+
+.navright {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search {
+  background-color: #eee;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  /* margin-right: 100px; */
+  justify-content: space-between;
+  padding: 0px 25px;
+}
+
+.search > input {
+  width: 90px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+}
+
+.search,
+.home,
+.show,
+.cinemas {
+  cursor: pointer;
+}
+
+.locationtop {
+  display: flex;
+  gap: 10px;
+  background-color: #d5d5d5;
+  height: 50px;
+  width: 120px;
+  /* padding-left: 25px;
+      padding-top: 17px; */
+  border-radius: 10px;
+}
+
+.locationtop :first-child {
+  font-size: 25px;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.locationtop > h4 {
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.locationtop :last-child {
+  font-size: 12px;
+  margin-top: 19px;
+}
+
+.logintop {
+  display: flex;
+  margin-right: 10 px;
+  align-items: center;
+  background-color: #bcccee;
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+}
+
+.logintop > i {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.logintop > h4 {
+  font-size: 13px;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+
+.profil {
+  width: 100vw;
+  height: 25vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 200px;
+  gap: 30px;
+  background-color: #430a51;
+}
+
+.profil .left > img {
+  height: 170px;
+  border-radius: 50px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.profil .right {
+  display: flex;
+  align-items: start;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.profil .right > h1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.profil .right > h4 {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: rgb(187, 182, 182);
+}
+
+.details {
+  height: 64.3vh;
+  display: flex;
+  padding-top: 30px;
+  padding-left: 200px;
+  background-color: #969393;
+}
+
+.all {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: #c6cad3;
+  width: 350px;
+  padding: 30px;
+  gap: 25px;
+  border-radius: 20px;
+  border: 1px solid rgb(124, 119, 28);
+  height: 40vh;
+}
+
+.personal,
+.booking,
+.card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.personal > h1,
+.booking > h1,
+.card > h1 {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+.personal > i,
+.booking > i,
+.card > i {
+  font-size: 20px;
+}
+
+.personal {
+  background-color: #d3aa40;
+  height: 40px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.booking,
+.card {
+  margin-top: -10px;
+  margin-left: 8px;
+}
+
+.all > h3 {
+  margin-top: 130px;
+  margin-left: 8px;
+  border-bottom: 1px solid rgb(128, 10, 10);
+  width: 60px;
+  color: rgb(164, 14, 14);
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 50vw;
+  margin-left: 40px;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 20px;
+  height: 30vh;
+  background-color: #c6cad3;
+  border: 1px solid rgb(124, 119, 28);
+}
+
+.heading {
+  display: flex;
+  gap: 600px;
+  align-items: center;
+}
+
+.heading h1,
+h2 {
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.heading > h1 {
+  font-weight: 600;
+}
+
+.heading h2 {
+  border-bottom: 1px solid rgb(112, 112, 210);
+  color: rgb(68, 68, 121);
+}
+
+.information hr {
+  width: 48vw;
+  margin-top: 10px;
+  color: black;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+  margin-top: 15px;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+.name h3 {
+  font-weight: 200;
+  margin-bottom: 10px;
+}
